@@ -17,4 +17,26 @@ Each question is stored as an **individual JSON file**, and the dataset is alrea
 ---
 
 ## 📂 Dataset Structure
+data/
+└── raw/
+├── train/
+│ ├── algebra/
+│ ├── geometry/
+│ ├── number_theory/
+│ └── ...
+└── test/
+├── algebra/
+├── geometry/
+├── number_theory/
+└── ...
+
+
+- Each subfolder name represents the **class label**
+- Each file is a JSON with at least the following field:
+
+json
+{
+  "problem": "What is the value of √(3⁵ + 3⁵ + 3⁵)?"
+}
+
 
